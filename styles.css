@@ -1,0 +1,117 @@
+/* font-face at top */
+
+@font-face {
+    font-family: 'lucida_handwritingitalic';
+    src: url('webfontkit/lucida_handwriting_italic-webfont.woff2') format('woff2'),
+         url('webfontkit/lucida_handwriting_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+    background-color: #191880;
+}
+
+
+/* These are for the navigation */
+
+.navbar {
+    background-color: #84A2BE;
+    justify-content: left;
+    padding-right: 1rem;
+    padding-left: 0.5rem;
+}
+
+.navbar-toggler {
+    margin-right: 25%;
+}
+.logo {
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-self: right;
+    max-height: 110px;
+}
+.logoImage {
+    width: 150px;
+}
+
+.logoName {
+    font-family: 'lucida_handwritingitalic';
+    font-size: 16px;
+    white-space: nowrap;
+    color: #191880;
+
+    position: relative;
+    display: block;
+    font-size: 16px;
+    bottom: 30px;
+    white-space: nowrap;
+    left: 50px; 
+}
+
+.navbar-nav {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.nav-item {
+    white-space: nowrap;
+
+    padding: 2rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+.callnow {
+    white-space: nowrap;
+
+    font-family: sans-serif;
+    background-color: red;
+    border-radius: 50px;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    padding-top: 1rem;
+
+    border: none;
+}
+
+.btn:hover {
+    background-color: rgb(184, 0, 0);
+}
+.nav-item:hover {
+    background-color: #94B1CC;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+.navbar-toggler {
+    color: #191880;
+}
+
+@media screen and (min-width: 992px) {
+
+    .navbar {
+        justify-content: space-around;
+    }
+
+    .logoName {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    bottom: 30px;
+    white-space: nowrap;
+    left: 50px; 
+    }
+}
