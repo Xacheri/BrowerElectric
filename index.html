@@ -16,6 +16,8 @@
 
 
     <link href="styles.css" rel="stylesheet"> <!-- Custom Stylesheet -->
+
+    <script src="https://kit.fontawesome.com/3d9e4ab68b.js" crossorigin="anonymous"></script> <!-- fontawesome -->
 </head>
 
 <body>
@@ -23,8 +25,8 @@
     <nav class="navbar navbar-expand-lg justify-content-lg-around">
 
         <!-- Nav toggler for mobile -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
           </button>
       
         <!-- Logo -->
@@ -49,11 +51,58 @@
                 </li>
 
                 <!-- Call Now Button -->
-                <button type="button" class="callnow btn btn-primary "><a href="tel:6607736760"><p>Call Now! <br> (660) 773 - 6760</p></a></button>
+                <li>
+                    <button type="button" class="callnow btn btn-primary" onclick="location.href='tel:6607736760'">Call Now! <br> (660) 773 - 6760</button>
+                </li>
             </ul>
 
         </div>
-            
+    </nav>
+    
+    <section style="margin-left: 5%; margin-right: 5%;">
+        <h2 id="cirheader">Commercial  -  Industrial  -  Residential</h2>
+
+        <!-- Testimonial Carousel -->
+
+        <div id="testimonialCarouselControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active w-100">
+                <figure class="testimonial">
+                    <blockquote>
+                        <p>Brower Electric has been performing and executing our commercial and residential electrical needs for over 20 years... professional, timely, and a pleasure to do business with.</p>
+                    </blockquote>
+                    <figcaption>
+                        Holman Construction LLC
+                    </figcaption>
+                </figure>
+              </div>
+              <div class="carousel-item w-100">
+                <figure class="testimonial">
+                    <blockquote>
+                        <p>We have worked on numerous projects with Bower Electric over the course of 25 years. The projects consist of everything from small tenet infill remodels to large industrial construction... After completition of the projects, they are always attentive to the punchlist and warranty items</p>
+                    </blockquote>
+                    <figcaption>
+                        Copeland Development & Construction Co. 
+                    </figcaption>
+                </figure>
+              </div>
+
+              <!-- TODO: Add more testimonials when they are made available -->
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarouselControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarouselControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="d-flex justify-content-center p-5"><button type="button" class="callnow btn btn-primary p-4 ps-5 pe-5" onclick="location.href='tel:6607736760'">Request A Quote</button></div>
+    </section>
+
     <!-- Bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>

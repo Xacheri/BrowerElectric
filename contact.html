@@ -16,6 +16,9 @@
 
 
     <link href="styles.css" rel="stylesheet"> <!-- Custom Stylesheet -->
+
+    <script src="https://kit.fontawesome.com/3d9e4ab68b.js" crossorigin="anonymous"></script> <!-- fontawesome -->
+
 </head>
 
 <body>
@@ -24,7 +27,7 @@
 
         <!-- Nav toggler for mobile -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="fa-solid fa-bars"></i>
           </button>
       
         <!-- Logo -->
@@ -49,10 +52,13 @@
                 </li>
 
                 <!-- Call Now Button -->
-                <button type="button" class="callnow btn btn-primary "><a href="tel:6607736760"><p>Call Now! <br> (660) 773 - 6760</p></a></button>
+                <li>
+                    <button type="button" class="callnow btn btn-primary" onclick="location.href='tel:6607736760'">Call Now! <br> (660) 773 - 6760</button>
+                </li>
             </ul>
 
         </div>
+    </nav>
             
     <!-- Bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
