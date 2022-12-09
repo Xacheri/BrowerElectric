@@ -16,6 +16,12 @@ p {
     color: white;
 }
 
+pre {
+    font-size: 1.2rem;
+    text-indent: 32px;
+    font-family: sans-serif;
+    color: white;
+}
 body {
     max-width: 100vw;
 
@@ -176,11 +182,6 @@ h3 {
 
 /* Services Grid */
 
-    .row > * {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-        justify-content: space-between;
-    }
 
     .linewrapper {
         position: relative;
@@ -190,7 +191,7 @@ h3 {
     .vertline {
         position: absolute;
         left: 50%;
-        height: 350%; /* 350% so it goes through all 3 rows */
+        height: 300%; /* 300% so it goes through all 3 rows */
         border: 6px solid black;
     }
 
@@ -219,6 +220,31 @@ h3 {
     }
 
 
+/* Current Project Cards */
+
+
+    .card-text {
+        color: black;
+    }
+
+    .card-title {
+        font-family: 'Noto Sans', sans-serif;
+        color: black;
+        font-size: 1.5rem;
+    }
+
+    .max-width-projCards {
+        width: 500px;
+        max-width: 100vw;
+    }
+    
+    .projRow {
+        justify-content: space-around;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+
 /* Media Queries */
 
 @media screen and (min-width: 996px) {
@@ -238,4 +264,5 @@ h3 {
     .treeimage {
         min-width: 30vw;
     }
+
 }
