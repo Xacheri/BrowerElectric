@@ -76,6 +76,8 @@
       </div>
             
       <div class="row mt-5 me-0 ms-0 d-flex flex-column flex-md-row align-items-center align-items-md-baseline" style="min-height: 55vh;">
+
+        <!--Text-->
         <div class="col col-md-6 d-flex justify-content-center">
             <div class="w-75">
                 <h2 class="text-center text-decoration-underline display-5">Join The Team!</h2>
@@ -83,8 +85,10 @@
                 <p class="joinusText">To apply, submit your resume and contact information in the form below.</p>
             </div>
         </div>
+
+        <!--Form-->
         <div class="col col-md-6 d-flex justify-content-center">
-            <form class="bg-white container-fluid d-flex flex-column" method="get" action="/nobackend.html">
+            <form class="bg-white container-fluid d-flex flex-column" method="get" action="/nobackend.html"> <!-- TODO: Build Backend -->
                     <div class="p-3 pt-4">
                         <label for="fullname">Full Name:</label><br>
                         <input type="text" id="fullname" name="fullname">
@@ -107,7 +111,7 @@
 
                     <div class="p-3">
                         <label for="formFile" class="form-label">Upload Resume</label>
-                        <input class="form-control" type="file" id="formFile">
+                        <input class="form-control" type="file" id="formFile" name="resume">
                     </div>
 
                     <div class="p-3 pe-4 align-self-end"><input type="submit" value="Submit"></div>
